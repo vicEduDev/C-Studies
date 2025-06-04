@@ -8,6 +8,8 @@ int main(){
     std::cout << "Hello world... Yeah, I guess that's it" << '\n';
     std::cout << "Did I jump the line?" << '\n';
 
+    //**************************************************************************************************************//
+
     //Let's declare some variables
     //Int variables
     int x; //Yeah, we've declared
@@ -31,6 +33,12 @@ int main(){
     //String 'variable' (It's technically an object)
     std::string name = "Victor";
     std::cout << name << '\n';
+
+    //**************************************************************************************************************//
+    
+    //Let's learn about constants... we can't change them!!!
+    const double PI = 3.14159; //It's convention that constants go UPPER CASE
+    std::cout << "Pi = " << PI << '\n';
 
     return 0;
 }
