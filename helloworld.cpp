@@ -40,5 +40,35 @@ int main(){
     const double PI = 3.14159; //It's convention that constants go UPPER CASE
     std::cout << "Pi = " << PI << '\n';
 
+    //**************************************************************************************************************//
+    
+    //Accepting user inputs
+    //cout << (insertion operator)
+    //cin >> (extraction operator)
+
+    std::string user_name;
+    int user_age;
+
+    //std::cout << "What's your name? Type it in here: ";
+    //std::cin >> user_name;
+    //std::cout << "Well, hello, " << user_name << '\n';
+
+    //The problem with the 'cin' keyword is that you can't type a string that has spaces on it
+    //In this case we can use the getline function
+    std::cout << "Whats' your full name? ";
+    std::getline(std::cin, user_name);
+
+    std::cout << "And what's your age? ";
+    std::cin >> user_age;
+    std::cout << "Hello, " << user_name << ", you're " << user_age << " years old" << '\n';
+
+    //We can also use
+    //std::cin >> std::ws
+    //Inside a getline function in order to eliminate any white space/new line characters in the buffer
+
+    //**************************************************************************************************************//
+    
+    //
+
     return 0;
 }
